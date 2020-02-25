@@ -12,31 +12,30 @@ body {
 form {
     display: flex;
     flex-direction: column;
+
 }
 #fourForm {
     display: flex;
     flex-direction: column;
     display: none;
+
 }
-
-
-
-
-
-
-
 #eightForm {
     display: flex;
     flex-direction: column;
+    display: none;
 }
 #sixteenForm{
     display: flex;
     flex-direction: column;
+    display: none;
 }
 #thrityTwoForm {
     display: flex;
     flex-direction: column;
+    display: none;
 }
+
 .submitBracket {
     
 }
