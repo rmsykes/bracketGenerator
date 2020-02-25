@@ -3,41 +3,39 @@ body {
     text-align: center;
 }
 
-/* header */
-#formsArea {
+
+/* HEADER */
+
+/* aligns buttons and forms */
+#formsArea { 
     display: flex;
     justify-content: space-around;
 }
-
-form {
+/* creates columns for input feilds */
+form { 
     display: flex;
     flex-direction: column;
-
 }
+/* each display:none hides the inputs by default */
 #fourForm {
-    display: flex;
-    flex-direction: column;
     display: none;
-
 }
 #eightForm {
-    display: flex;
-    flex-direction: column;
     display: none;
 }
 #sixteenForm{
-    display: flex;
-    flex-direction: column;
     display: none;
 }
 #thrityTwoForm {
-    display: flex;
-    flex-direction: column;
     display: none;
 }
-
+/* creates space b/e toggle button and input field  */
+button {
+ margin: 5px auto;   
+}
+/* creates space b/e submit button and input field  */
 .submitBracket {
-    
+    margin: 5px auto;   
 }
 
 
