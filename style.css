@@ -9,13 +9,22 @@ body {
     justify-content: space-around;
 }
 
-.form {
-
+form {
+    display: flex;
+    flex-direction: column;
 }
 #fourForm {
     display: flex;
     flex-direction: column;
+    display: none;
 }
+
+
+
+
+
+
+
 #eightForm {
     display: flex;
     flex-direction: column;
@@ -28,3 +37,9 @@ body {
     display: flex;
     flex-direction: column;
 }
+.submitBracket {
+    
+}
+
+
+

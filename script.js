@@ -1,4 +1,8 @@
 // forms displayed on click
-document.querySelector('#fourFormButton').addEventListener('click', e => {
-    
-})
+
+$(document).ready(function() {
+    $(".formButton").click(function() {
+      $("#fourForm").toggle();
+    });
+  });
+
