@@ -5,5 +5,26 @@ body {
 
 /* header */
 #formsArea {
+    display: flex;
+    justify-content: space-around;
+}
 
+.form {
+
+}
+#fourForm {
+    display: flex;
+    flex-direction: column;
+}
+#eightForm {
+    display: flex;
+    flex-direction: column;
+}
+#sixteenForm{
+    display: flex;
+    flex-direction: column;
+}
+#thrityTwoForm {
+    display: flex;
+    flex-direction: column;
 }
