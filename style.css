@@ -33,10 +33,33 @@ form {
 button {
  margin: 5px auto;   
 }
-/* creates space b/e submit button and input field  */
-.submitBracket {
+/* creates space b/e submit buttons and input fields  */
+#submitFourBracket {
+    margin: 5px auto;   
+}
+#submitEightBracket {
+    margin: 5px auto;   
+}
+#submitSixteenBracket {
+    margin: 5px auto;   
+}
+#submitThirtyTwoBracket {
     margin: 5px auto;   
 }
 
+/* brackets */
+#fourTeamBracket {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+#fourTeamBracketLeft {
+    display: flex;
+    flex-direction: column;
+}
+#fourTeamBracketRight {
+    display: flex;
+    flex-direction: column;
+}
 
 

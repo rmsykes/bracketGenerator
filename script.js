@@ -58,5 +58,10 @@ $(document).ready(function() {
     // calls shuffle function from above to shuffle four-team Array
     shuffle(fourTeamBracket)
 
-    document.querySelector('#fourTeamBracket').innerText = fourTeamBracket
+    // renders four-team bracket
+    document.querySelector('#fourTeamBracketLeftOne').innerText = fourTeamBracket[0]
+    document.querySelector('#fourTeamBracketLeftTwo').innerText = fourTeamBracket[1]
+    document.querySelector('#fourTeamBracketRightOne').innerText = fourTeamBracket[2]
+    document.querySelector('#fourTeamBracketRightTwo').innerText = fourTeamBracket[3]
+
   })
