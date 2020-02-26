@@ -1,7 +1,7 @@
-// arrays/objects
+// strings/arrays/objects
 let fourTeamBracket = []
-let championTeamOne = []
-let championTeamTwo = []
+let championTeamOne = ''
+let championTeamTwo = ''
 
 // functions
 // shuffle/randomize array
@@ -75,32 +75,37 @@ $(document).ready(function() {
   })
 
 
-// four team bracket winner clicks events
-//   four team bracket, left one, winner
+// FOUR TEAM BRACKET WINNER CLICK EVENTS 
+//   four team bracket, left one, winner, click event: 
+//   assigned to champion team 1 string, & moved to champion team 1 button
 document.querySelector('#fourTeamBracketLeftOne').addEventListener('click', (e) => {
+    championTeamOne = document.querySelector(`#fourTeamBracketLeftOne`).innerText
     document.querySelector('#fourTeamBracketChampionshipOne').innerText = fourTeamBracket[0]
 
 })
-//   four team bracket, left two, winner
+//   four team bracket, left two, winner, click event: 
+//   assigned to champion team 1 string, & moved to champion team 1 button
 document.querySelector('#fourTeamBracketLeftTwo').addEventListener('click', (e) => {
+    championTeamOne = document.querySelector(`#fourTeamBracketLeftTwo`).innerText
     document.querySelector('#fourTeamBracketChampionshipOne').innerText = fourTeamBracket[1]
 })
-//   four team bracket, right one, winner
+//   four team bracket, right one, winner, click event: 
+//   assigned to champion team 2 string, & moved to champion team 2 button 
 document.querySelector('#fourTeamBracketRightOne').addEventListener('click', (e) => {
+    championTeamTwo = document.querySelector(`#fourTeamBracketRightOne`).innerText
     document.querySelector('#fourTeamBracketChampionshipTwo').innerText = fourTeamBracket[2]
-
 })
-//   four team bracket, right two, winner
+//   four team bracket, right two, winner, click event: 
+//   assigned to champion team 2 string, & moved to champion team 2 button 
 document.querySelector('#fourTeamBracketRightTwo').addEventListener('click', (e) => {
+    championTeamTwo = document.querySelector(`#fourTeamBracketRightTwo`).innerText
     document.querySelector('#fourTeamBracketChampionshipTwo').innerText = fourTeamBracket[3]
 })
-//  four team bracket, championship team one
+//  four team bracket, championship team one: alerts winner 
 document.querySelector('#fourTeamBracketChampionshipOne').addEventListener('click', (e) => {
-    championTeamOne.push(document.querySelector('#fourTeamBracketChampionshipOne').value)
-    alert(`${championTeamOne[0]} Wins`)
+    alert(`${championTeamOne} Wins`)
 })
-//  four team bracket, championship team two
+//  four team bracket, championship team two: alerts winner 
 document.querySelector('#fourTeamBracketChampionshipTwo').addEventListener('click', (e) => {
-    championTeamTwo.push(document.querySelector('#fourTeamBracketChampionshipTwo').value)
-    alert(`${championTeamTwo[0]} Wins`)
+    alert(`${championTeamTwo} Wins`)
 })
