@@ -29,6 +29,12 @@ form {
 #thrityTwoForm {
     display: none;
 }
+/* hides brackets until teams are submitted */
+#fourTeamBracketWrapper {
+    display: none;
+}
+
+
 /* creates space b/e toggle button and input field  */
 button {
  margin: 5px auto;   
@@ -48,6 +54,8 @@ button {
 }
 
 /* brackets */
+
+/* four team bracket */
 #fourTeamBracket {
     text-align: center;
     display: flex;
@@ -58,6 +66,10 @@ button {
     flex-direction: column;
 }
 #fourTeamBracketRight {
+    display: flex;
+    flex-direction: column;
+}
+#fourTeamBracketChampionship {
     display: flex;
     flex-direction: column;
 }

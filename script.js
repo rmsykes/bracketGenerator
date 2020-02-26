@@ -1,6 +1,7 @@
-// objects
+// arrays/objects
 let fourTeamBracket = []
-
+let championTeamOne = []
+let championTeamTwo = []
 
 // functions
 // shuffle/randomize array
@@ -46,8 +47,16 @@ $(document).ready(function() {
     });
   });
 
+// 4 team bracket hidden until teams submitted, then shown 
+$(document).ready(function() {
+    $("#submitFourBracket").click(function() {
+      $("#fourTeamBracketWrapper").toggle();
+    });
+  });
+
+
 // create bracket click event listener
-// 4 team create click
+// four team create click
   document.querySelector('#submitFourBracket').addEventListener('click', (e) => {
     e.preventDefault()
     fourTeamBracket.push(document.querySelector('#fourFormInputOne').value)
@@ -63,5 +72,35 @@ $(document).ready(function() {
     document.querySelector('#fourTeamBracketLeftTwo').innerText = fourTeamBracket[1]
     document.querySelector('#fourTeamBracketRightOne').innerText = fourTeamBracket[2]
     document.querySelector('#fourTeamBracketRightTwo').innerText = fourTeamBracket[3]
-
   })
+
+
+// four team bracket winner clicks events
+//   four team bracket, left one, winner
+document.querySelector('#fourTeamBracketLeftOne').addEventListener('click', (e) => {
+    document.querySelector('#fourTeamBracketChampionshipOne').innerText = fourTeamBracket[0]
+
+})
+//   four team bracket, left two, winner
+document.querySelector('#fourTeamBracketLeftTwo').addEventListener('click', (e) => {
+    document.querySelector('#fourTeamBracketChampionshipOne').innerText = fourTeamBracket[1]
+})
+//   four team bracket, right one, winner
+document.querySelector('#fourTeamBracketRightOne').addEventListener('click', (e) => {
+    document.querySelector('#fourTeamBracketChampionshipTwo').innerText = fourTeamBracket[2]
+
+})
+//   four team bracket, right two, winner
+document.querySelector('#fourTeamBracketRightTwo').addEventListener('click', (e) => {
+    document.querySelector('#fourTeamBracketChampionshipTwo').innerText = fourTeamBracket[3]
+})
+//  four team bracket, championship team one
+document.querySelector('#fourTeamBracketChampionshipOne').addEventListener('click', (e) => {
+    championTeamOne.push(document.querySelector('#fourTeamBracketChampionshipOne').value)
+    alert(`${championTeamOne[0]} Wins`)
+})
+//  four team bracket, championship team two
+document.querySelector('#fourTeamBracketChampionshipTwo').addEventListener('click', (e) => {
+    championTeamTwo.push(document.querySelector('#fourTeamBracketChampionshipTwo').value)
+    alert(`${championTeamTwo[0]} Wins`)
+})
