@@ -1,10 +1,11 @@
-// strings/arrays/objects
+// strings/arrays/objects //////////////////////////////////////////////////////////////////////
 let fourTeamBracket = []
+let eightTeamBracket = []
 let championTeamOne = ''
 let championTeamTwo = ''
 
-// functions
-// shuffle/randomize array
+// FUNCTIONS //////////////////////////////////////////////////////////////////////////////////
+// shuffle/randomize array - fields/yates
 function shuffle(array) {
     let m = array.length, t, i;
     // While there remain elements to shuffle…
@@ -20,8 +21,9 @@ function shuffle(array) {
   }
 
 
-// hidden forms displayed on click
+// HIDDEN/SHOWN FORMS & BRACKETS ON CLICK/SUBMIT ////////////////////////////////////////////////
 
+// HIDDEN/SHOWN BRACKET FORMS ON CLICK
 // 4 team form
 $(document).ready(function() {
     $("#fourFormButton").click(function() {
@@ -47,16 +49,25 @@ $(document).ready(function() {
     });
   });
 
-// 4 team bracket hidden until teams submitted, then shown 
+// HIDDEN/SHOWN BRACKET ON CLICK
+// 4 team bracket 
 $(document).ready(function() {
     $("#submitFourBracket").click(function() {
       $("#fourTeamBracketWrapper").toggle();
     });
   });
+  // 8 team bracket
+  $(document).ready(function() {
+    $("#submitEightBracket").click(function() {
+      $("#eightTeamBracketWrapper").toggle();
+    });
+  });
 
 
-// create bracket click event listener
-// four team create click
+
+
+// FOUR TEAM CREATE BRACKET CLICK EVENT: //////////////////////////////////////////////////////
+// pushes values of inputs into fourTeamBracket array
   document.querySelector('#submitFourBracket').addEventListener('click', (e) => {
     e.preventDefault()
     fourTeamBracket.push(document.querySelector('#fourFormInputOne').value)
@@ -64,10 +75,10 @@ $(document).ready(function() {
     fourTeamBracket.push(document.querySelector('#fourFormInputThree').value)
     fourTeamBracket.push(document.querySelector('#fourFormInputFour').value)
 
-    // calls shuffle function from above to shuffle four-team Array
+    // calls shuffle function to shuffle and return randomized four-team Array
     shuffle(fourTeamBracket)
 
-    // renders four-team bracket
+    // renders four-team bracket in different bracket buttons
     document.querySelector('#fourTeamBracketLeftOne').innerText = fourTeamBracket[0]
     document.querySelector('#fourTeamBracketLeftTwo').innerText = fourTeamBracket[1]
     document.querySelector('#fourTeamBracketRightOne').innerText = fourTeamBracket[2]
@@ -109,3 +120,8 @@ document.querySelector('#fourTeamBracketChampionshipOne').addEventListener('clic
 document.querySelector('#fourTeamBracketChampionshipTwo').addEventListener('click', (e) => {
     alert(`${championTeamTwo} Wins`)
 })
+
+
+
+// EIGHT TEAM CREATE BRACKET CLICK EVENT: //////////////////////////////////////////////////////
+// pushes values of inputs into eightTeamBracket array

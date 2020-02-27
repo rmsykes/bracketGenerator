@@ -2,7 +2,9 @@
 body {
     text-align: center;
 }
-
+button:hover{
+    /* background-color: yellow; */
+}
 
 /* HEADER */
 
@@ -53,11 +55,10 @@ button {
     margin: 5px auto;   
 }
 
-/* brackets */
+/* BRACKET STYLING AND SPACING */
 
 /* four team bracket */
 #fourTeamBracket {
-    text-align: center;
     display: flex;
     justify-content: space-around;
 }
@@ -74,4 +75,16 @@ button {
     flex-direction: column;
 }
 
-
+/* eight team bracket */
+#eightTeamBracket {
+    display: flex;
+    justify-content: space-around;
+}
+#eightTeamBracketLeft {
+    display: flex;
+    flex-direction: column;
+}
+#eightTeamBracketRight {
+    display: flex;
+    flex-direction: column;
+}
