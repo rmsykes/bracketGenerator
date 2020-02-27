@@ -35,7 +35,9 @@ form {
 #fourTeamBracketWrapper {
     display: none;
 }
-
+#eightTeamBracketWrapper {
+    display: none;
+}
 
 /* creates space b/e toggle button and input field  */
 button {
@@ -72,13 +74,19 @@ button {
 }
 #fourTeamBracketChampionship {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+}
+#fourTeamBracketChampionshipOne {
+    margin: 7px;
+}
+#fourTeamBracketChampionshipTwo{
+    margin: 7px;
 }
 
 /* eight team bracket */
 #eightTeamBracket {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 #eightTeamBracketLeft {
     display: flex;
@@ -87,4 +95,24 @@ button {
 #eightTeamBracketRight {
     display: flex;
     flex-direction: column;
+}
+#eightTeamBracketFinalFour{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:350px;
+}
+#eightTeamBracketFinalFourLeft {
+    display: flex;
+    flex-direction: column;
+}
+#eightTeamBracketFinalFourRight {
+    display: flex;
+    flex-direction: column;
+}
+#eightTeamBracketChampionshipOne {
+    margin:7px;
+}
+#eightTeamBracketChampionshipTwo {
+    margin:7px;
 }

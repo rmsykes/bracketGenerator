@@ -49,7 +49,7 @@ $(document).ready(function() {
     });
   });
 
-// HIDDEN/SHOWN BRACKET ON CLICK
+// HIDDEN/SHOWN BRACKET ON CREATE BRACKET CLICK
 // 4 team bracket 
 $(document).ready(function() {
     $("#submitFourBracket").click(function() {
@@ -125,3 +125,28 @@ document.querySelector('#fourTeamBracketChampionshipTwo').addEventListener('clic
 
 // EIGHT TEAM CREATE BRACKET CLICK EVENT: //////////////////////////////////////////////////////
 // pushes values of inputs into eightTeamBracket array
+document.querySelector('#submitEightBracket').addEventListener('click', (e) => {
+  e.preventDefault()
+  eightTeamBracket.push(document.querySelector('#eightFormInputOne').value)
+  eightTeamBracket.push(document.querySelector('#eightFormInputTwo').value)
+  eightTeamBracket.push(document.querySelector('#eightFormInputThree').value)
+  eightTeamBracket.push(document.querySelector('#eightFormInputFour').value)
+  eightTeamBracket.push(document.querySelector('#eightFormInputFive').value)
+  eightTeamBracket.push(document.querySelector('#eightFormInputSix').value)
+  eightTeamBracket.push(document.querySelector('#eightFormInputSeven').value)
+  eightTeamBracket.push(document.querySelector('#eightFormInputEight').value)
+
+  // calls shuffle function to shuffle and return randomized four-team Array
+  shuffle(eightTeamBracket)
+
+  // renders four-team bracket in different bracket buttons
+  document.querySelector('#eightTeamBracketLeftOne').innerText = eightTeamBracket[0]
+  document.querySelector('#eightTeamBracketLeftTwo').innerText = eightTeamBracket[1]
+  document.querySelector('#eightTeamBracketLeftThree').innerText = eightTeamBracket[2]
+  document.querySelector('#eightTeamBracketLeftFour').innerText = eightTeamBracket[3]
+  document.querySelector('#eightTeamBracketRightOne').innerText = eightTeamBracket[4]
+  document.querySelector('#eightTeamBracketRightTwo').innerText = eightTeamBracket[5]
+  document.querySelector('#eightTeamBracketRightThree').innerText = eightTeamBracket[6]
+  document.querySelector('#eightTeamBracketRightFour').innerText = eightTeamBracket[7]
+
+})
