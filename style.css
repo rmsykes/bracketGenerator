@@ -28,9 +28,7 @@ form {
 #sixteenForm{
     display: none;
 }
-#thrityTwoForm {
-    display: none;
-}
+
 /* hides brackets until teams are submitted */
 #fourTeamBracketWrapper {
     display: none;
@@ -53,9 +51,7 @@ button {
 #submitSixteenBracket {
     margin: 5px auto;   
 }
-#submitThirtyTwoBracket {
-    margin: 5px auto;   
-}
+
 
 /* BRACKET STYLING AND SPACING */
 
@@ -116,3 +112,56 @@ button {
 #eightTeamBracketChampionshipTwo {
     margin:7px;
 }
+
+/* SIXTEEN TEAM BRACKET */
+#sixteenTeamBracketWrapper {
+    
+}
+#sixteenTeamBracket {
+    display: flex;
+    justify-content: space-evenly;
+}
+#sixteenTeamBracketLeft {
+    display: flex;
+    flex-direction: column;
+}
+#sixteenTeamBracketRight {
+    display: flex;
+    flex-direction: column;
+}
+#sixteenTeamBracketEliteEight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:600px;
+
+}
+#sixteenTeamBracketEliteEightLeft {
+    display: flex;
+    flex-direction: column;
+}
+#sixteenTeamBracketEliteEightRight{
+    display: flex;
+    flex-direction: column;
+}
+#sixteenTeamBracketFinalFour {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:310px;
+}
+#sixteenTeamBracketFinalFourLeft {
+    display: flex;
+    flex-direction: column;
+}
+#sixteenTeamBracketFinalFourRight{
+    display: flex;
+    flex-direction: column;
+}
+#sixteenTeamBracketChampionshipOne {
+    margin:7px;
+}
+#sixteenTeamBracketChampionshipTwo {
+    margin:7px;
+}
+
