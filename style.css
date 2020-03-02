@@ -36,6 +36,9 @@ form {
 #eightTeamBracketWrapper {
     display: none;
 }
+#sixteenTeamBracketWrapper {
+    display: none;
+}
 
 /* creates space b/e toggle button and input field  */
 button {

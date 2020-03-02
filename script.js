@@ -1,6 +1,7 @@
 // strings/arrays/objects //////////////////////////////////////////////////////////////////////
 let fourTeamBracket = []
 let eightTeamBracket = []
+let sixteenTeamBracket = []
 let championTeamOne = ''
 let championTeamTwo = ''
 
@@ -23,7 +24,7 @@ function shuffle(array) {
 
 // HIDDEN/SHOWN FORMS & BRACKETS ON CLICK/SUBMIT ////////////////////////////////////////////////
 
-// HIDDEN/SHOWN BRACKET FORMS ON CLICK
+// HIDDEN/SHOWN BRACKET INPUT FORMS ON CLICK
 // 4 team form
 $(document).ready(function() {
     $("#fourFormButton").click(function() {
@@ -42,12 +43,6 @@ $(document).ready(function() {
       $("#sixteenForm").toggle();
     });
   });
-// 32 team form
-  $(document).ready(function() {
-    $("#thirtyTwoFormButton").click(function() {
-      $("#thrityTwoForm").toggle();
-    });
-  });
 
 // HIDDEN/SHOWN BRACKET ON CREATE BRACKET CLICK
 // 4 team bracket 
@@ -62,9 +57,32 @@ $(document).ready(function() {
       $("#eightTeamBracketWrapper").toggle();
     });
   });
+  // 16 team bracket
+  $(document).ready(function() {
+    $("#submitSixteenBracket").click(function() {
+      $("#sixteenTeamBracketWrapper").toggle();
+    });
+  });
 
-
-
+// HIDE INPUT FIELDS ON CREATE BRACKET CLICK 
+// 4 team bracket
+$(document).ready(function() {
+  $("#submitFourBracket").click(function() {
+    $("#fourForm").toggle();
+  });
+});
+// 8 team bracket
+$(document).ready(function() {
+  $("#submitEightBracket").click(function() {
+    $("#eightForm").toggle();
+  });
+});
+// 16 team input fields
+$(document).ready(function() {
+  $("#submitSixteenBracket").click(function() {
+    $("#sixteenForm").toggle();
+  });
+});
 
 // FOUR TEAM CREATE BRACKET CLICK EVENT: //////////////////////////////////////////////////////
 // pushes values of inputs into fourTeamBracket array
@@ -136,10 +154,10 @@ document.querySelector('#submitEightBracket').addEventListener('click', (e) => {
   eightTeamBracket.push(document.querySelector('#eightFormInputSeven').value)
   eightTeamBracket.push(document.querySelector('#eightFormInputEight').value)
 
-  // calls shuffle function to shuffle and return randomized four-team Array
+  // calls shuffle function to shuffle and return randomized eight-team Array
   shuffle(eightTeamBracket)
 
-  // renders four-team bracket in different bracket buttons
+  // renders eight-team bracket in different bracket buttons
   document.querySelector('#eightTeamBracketLeftOne').innerText = eightTeamBracket[0]
   document.querySelector('#eightTeamBracketLeftTwo').innerText = eightTeamBracket[1]
   document.querySelector('#eightTeamBracketLeftThree').innerText = eightTeamBracket[2]
@@ -148,5 +166,54 @@ document.querySelector('#submitEightBracket').addEventListener('click', (e) => {
   document.querySelector('#eightTeamBracketRightTwo').innerText = eightTeamBracket[5]
   document.querySelector('#eightTeamBracketRightThree').innerText = eightTeamBracket[6]
   document.querySelector('#eightTeamBracketRightFour').innerText = eightTeamBracket[7]
+})
 
+
+
+
+
+// SIXTEEN TEAM CREATE BRACKET CLICK EVENT: //////////////////////////////////////////////////////
+// pushes values of inputs into sixteenTeamBracket array
+document.querySelector('#submitSixteenBracket').addEventListener('click', (e) => {
+  e.preventDefault()
+  sixteenTeamBracket.push(document.querySelector('#sixteenFormInputOne').value)
+  sixteenTeamBracket.push(document.querySelector('#sixteenFormInputTwo').value)
+  sixteenTeamBracket.push(document.querySelector('#sixteenFormInputThree').value)
+  sixteenTeamBracket.push(document.querySelector('#sixteenFormInputFour').value)
+  sixteenTeamBracket.push(document.querySelector('#sixteenFormInputFive').value)
+  sixteenTeamBracket.push(document.querySelector('#sixteenFormInputSix').value)
+  sixteenTeamBracket.push(document.querySelector('#sixteenFormInputSeven').value)
+  sixteenTeamBracket.push(document.querySelector('#sixteenFormInputEight').value)
+  sixteenTeamBracket.push(document.querySelector('#sixteenFormInputNine').value)
+  sixteenTeamBracket.push(document.querySelector('#sixteenFormInputTen').value)
+  sixteenTeamBracket.push(document.querySelector('#sixteenFormInputEleven').value)
+  sixteenTeamBracket.push(document.querySelector('#sixteenFormInputTwelve').value)
+  sixteenTeamBracket.push(document.querySelector('#sixteenFormInputThirteen').value)
+  sixteenTeamBracket.push(document.querySelector('#sixteenFormInputFourteen').value)
+  sixteenTeamBracket.push(document.querySelector('#sixteenFormInputFifteen').value)
+  sixteenTeamBracket.push(document.querySelector('#sixteenFormInputSixteen').value)
+  
+  // calls shuffle function to shuffle and return randomized sixteen-team Array
+  shuffle(sixteenTeamBracket)
+
+  // renders sixteen-team bracket in different bracket buttons
+  document.querySelector('#sixteenTeamBracketLeftOne').innerText = sixteenTeamBracket[0]
+  document.querySelector('#sixteenTeamBracketLeftTwo').innerText = sixteenTeamBracket[1]
+  document.querySelector('#sixteenTeamBracketLeftThree').innerText = sixteenTeamBracket[2]
+  document.querySelector('#sixteenTeamBracketLeftFour').innerText = sixteenTeamBracket[3]
+  document.querySelector('#sixteenTeamBracketLeftFive').innerText = sixteenTeamBracket[4]
+  document.querySelector('#sixteenTeamBracketLeftSix').innerText = sixteenTeamBracket[5]
+  document.querySelector('#sixteenTeamBracketLeftSeven').innerText = sixteenTeamBracket[6]
+  document.querySelector('#sixteenTeamBracketLeftEight').innerText = sixteenTeamBracket[7]
+
+  document.querySelector('#sixteenTeamBracketRightOne').innerText = sixteenTeamBracket[8]
+  document.querySelector('#sixteenTeamBracketRightTwo').innerText = sixteenTeamBracket[9]
+  document.querySelector('#sixteenTeamBracketRightThree').innerText = sixteenTeamBracket[10]
+  document.querySelector('#sixteenTeamBracketRightFour').innerText = sixteenTeamBracket[11]
+  document.querySelector('#sixteenTeamBracketRightFive').innerText = sixteenTeamBracket[12]
+  document.querySelector('#sixteenTeamBracketRightSix').innerText = sixteenTeamBracket[13]
+  document.querySelector('#sixteenTeamBracketRightSeven').innerText = sixteenTeamBracket[14]
+  document.querySelector('#sixteenTeamBracketRightEight').innerText = sixteenTeamBracket[15]
+
+ 
 })
