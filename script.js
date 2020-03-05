@@ -175,40 +175,72 @@ document.querySelector('#submitEightBracket').addEventListener('click', (e) => {
 document.querySelector('#eightTeamBracketLeftOne').addEventListener('click', (e) => {
   document.querySelector('#eightTeamBracketFinalFourLeftOne').innerText = eightTeamBracket[0]
 })
-// eight team bracket, left two, winner, click event:
+// eight team bracket, elite 8, left two, winner, click event:
 // assign to eight team bracket, final four, left one button
 document.querySelector('#eightTeamBracketLeftTwo').addEventListener('click', (e) => {
   document.querySelector('#eightTeamBracketFinalFourLeftOne').innerText = eightTeamBracket[1]
 })
-// eight team bracket, left three, winner, click event:
+// eight team bracket, elite 8, left three, winner, click event:
 // assign to eight team bracket, final four, left two button
 document.querySelector('#eightTeamBracketLeftThree').addEventListener('click', (e) => {
   document.querySelector('#eightTeamBracketFinalFourLeftTwo').innerText = eightTeamBracket[2]
 })
-// eight team bracket, left four, winner click event:
+// eight team bracket, elite 8, left four, winner click event:
 // assign to eight team bracket, final four, left two button
 document.querySelector('#eightTeamBracketLeftFour').addEventListener('click', (e) => {
   document.querySelector('#eightTeamBracketFinalFourLeftTwo').innerText = eightTeamBracket[3]
 })
-// eight team bracket, right one, winner click event:
+// eight team bracket, elite 8, right one, winner click event:
 // assign to eight team bracket, final four, right one
 document.querySelector('#eightTeamBracketRightOne').addEventListener('click', (e) => {
   document.querySelector('#eightTeamBracketFinalFourRightOne').innerText = eightTeamBracket[4]
 })
-// eight team bracket, right two, winner click event:
+// eight team bracket, elite 8, right two, winner click event:
 // assign to eight team bracket, final four, right one
 document.querySelector('#eightTeamBracketRightTwo').addEventListener('click', (e) => {
   document.querySelector('#eightTeamBracketFinalFourRightOne').innerText = eightTeamBracket[5]
 })
-// eight team bracket, right three, winner click event:
+// eight team bracket, elite 8, right three, winner click event:
 // assign to eight team bracket, final four, right two
 document.querySelector('#eightTeamBracketRightThree').addEventListener('click', (e) => {
   document.querySelector('#eightTeamBracketFinalFourRightTwo').innerText = eightTeamBracket[6]
 })
-// eight team bracket, right four, winner click event:
+// eight team bracket, elite 8, right four, winner click event:
 // assign to eight team bracket, final four, right two
 document.querySelector('#eightTeamBracketRightFour').addEventListener('click', (e) => {
   document.querySelector('#eightTeamBracketFinalFourRightTwo').innerText = eightTeamBracket[7]
+})
+// eight team bracket, final 4, left one, winner click event:
+// assign to champion team 1 string, & moved to champion button 1 button
+document.querySelector('#eightTeamBracketFinalFourLeftOne').addEventListener('click', (e) => {
+  championTeamOne = document.querySelector(`#eightTeamBracketFinalFourLeftOne`).innerText
+  document.querySelector('#eightTeamBracketChampionshipOne').innerText = document.querySelector('#eightTeamBracketFinalFourLeftOne').innerText
+})
+// eight team bracket, final 4, left two, winner click event:
+// assign to champion team 1 string, & moved to champion button 1 button
+document.querySelector('#eightTeamBracketFinalFourLeftTwo').addEventListener('click', (e) => {
+  championTeamOne = document.querySelector(`#eightTeamBracketFinalFourLeftTwo`).innerText
+  document.querySelector('#eightTeamBracketChampionshipOne').innerText = document.querySelector('#eightTeamBracketFinalFourLeftTwo').innerText
+})
+// eight team bracket, final 4, right one, winner click event:
+// assign to champion team 2 string, & moved to champion button 2 button
+document.querySelector('#eightTeamBracketFinalFourRightOne').addEventListener('click', (e) => {
+  championTeamTwo = document.querySelector(`#eightTeamBracketFinalFourRightOne`).innerText
+  document.querySelector('#eightTeamBracketChampionshipTwo').innerText = document.querySelector('#eightTeamBracketFinalFourRightOne').innerText
+})
+// eight team bracket, final 4, right two, winner click event:
+// assign to champion team 2 string, & moved to champion button 2 button
+document.querySelector('#eightTeamBracketFinalFourRightTwo').addEventListener('click', (e) => {
+  championTeamTwo = document.querySelector(`#eightTeamBracketFinalFourRightTwo`).innerText
+  document.querySelector('#eightTeamBracketChampionshipTwo').innerText = document.querySelector('#eightTeamBracketFinalFourRightTwo').innerText
+})
+// eight team bracket, championship team one: alerts winner 
+document.querySelector('#eightTeamBracketChampionshipOne').addEventListener('click', (e) => {
+  alert(`${championTeamOne} Wins!`)
+})
+// eight team bracket, championship team two: alerts winner 
+document.querySelector('#eightTeamBracketChampionshipTwo').addEventListener('click', (e) => {
+  alert(`${championTeamTwo} Wins!`)
 })
 
 
