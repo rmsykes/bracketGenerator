@@ -287,3 +287,157 @@ document.querySelector('#submitSixteenBracket').addEventListener('click', (e) =>
   document.querySelector('#sixteenTeamBracketRightSeven').innerText = sixteenTeamBracket[14]
   document.querySelector('#sixteenTeamBracketRightEight').innerText = sixteenTeamBracket[15] 
 })
+
+// SIXTEEN TEAM BRACKET WINNER CLICK EVENTS //////////////////////////////////////////////////////
+// sixteen team bracket, sweet 16, left one, winner, click event: 
+// assigned to sixteen team bracket, elite 8, left one button 
+document.querySelector('#sixteenTeamBracketLeftOne').addEventListener('click', (e) => {
+  document.querySelector('#sixteenTeamBracketEliteEightLeftOne').innerText = document.querySelector('#sixteenTeamBracketLeftOne').innerText
+})
+// sixteen team bracket, sweet 16, left two, winner, click event: 
+// assigned to sixteen team bracket, elite 8, left one button 
+document.querySelector('#sixteenTeamBracketLeftTwo').addEventListener('click', (e) => {
+  document.querySelector('#sixteenTeamBracketEliteEightLeftOne').innerText = document.querySelector('#sixteenTeamBracketLeftTwo').innerText
+})
+// sixteen team bracket, sweet 16, left three, winner, click event: 
+// assigned to sixteen team bracket, elite 8, left two button 
+document.querySelector('#sixteenTeamBracketLeftThree').addEventListener('click', (e) => {
+  document.querySelector('#sixteenTeamBracketEliteEightLeftTwo').innerText = document.querySelector('#sixteenTeamBracketLeftThree').innerText
+})
+// sixteen team bracket, sweet 16, left four, winner, click event: 
+// assigned to sixteen team bracket, elite 8, left two button 
+document.querySelector('#sixteenTeamBracketLeftFour').addEventListener('click', (e) => {
+  document.querySelector('#sixteenTeamBracketEliteEightLeftTwo').innerText = document.querySelector('#sixteenTeamBracketLeftFour').innerText
+})
+// sixteen team bracket, sweet 16, left five, winner, click event: 
+// assigned to sixteen team bracket, elite 8, left three button 
+document.querySelector('#sixteenTeamBracketLeftFive').addEventListener('click', (e) => {
+  document.querySelector('#sixteenTeamBracketEliteEightLeftThree').innerText = document.querySelector('#sixteenTeamBracketLeftFive').innerText
+})
+// sixteen team bracket, sweet 16, left six, winner, click event: 
+// assigned to sixteen team bracket, elite 8, left three button 
+document.querySelector('#sixteenTeamBracketLeftSix').addEventListener('click', (e) => {
+  document.querySelector('#sixteenTeamBracketEliteEightLeftThree').innerText = document.querySelector('#sixteenTeamBracketLeftSix').innerText
+})
+// sixteen team bracket, sweet 16, left seven, winner, click event: 
+// assigned to sixteen team bracket, elite 8, left four button 
+document.querySelector('#sixteenTeamBracketLeftSeven').addEventListener('click', (e) => {
+  document.querySelector('#sixteenTeamBracketEliteEightLeftFour').innerText = document.querySelector('#sixteenTeamBracketLeftSeven').innerText
+})
+// sixteen team bracket, sweet 16, left eight, winner, click event: 
+// assigned to sixteen team bracket, elite 8, left four button 
+document.querySelector('#sixteenTeamBracketLeftEight').addEventListener('click', (e) => {
+  document.querySelector('#sixteenTeamBracketEliteEightLeftFour').innerText = document.querySelector('#sixteenTeamBracketLeftEight').innerText
+})
+// sixteen team bracket, sweet 16, right one, winner, click event: 
+// assigned to sixteen team bracket, elite 8, right one button 
+document.querySelector('#sixteenTeamBracketRightOne').addEventListener('click', (e) => {
+  document.querySelector('#sixteenTeamBracketEliteEightRightOne').innerText = document.querySelector('#sixteenTeamBracketRightOne').innerText
+})
+// sixteen team bracket, sweet 16, right two, winner, click event: 
+// assigned to sixteen team bracket, elite 8, right one button 
+document.querySelector('#sixteenTeamBracketRightTwo').addEventListener('click', (e) => {
+  document.querySelector('#sixteenTeamBracketEliteEightRightOne').innerText = document.querySelector('#sixteenTeamBracketRightTwo').innerText
+})
+// sixteen team bracket, sweet 16, right three, winner, click event: 
+// assigned to sixteen team bracket, elite 8, right two button 
+document.querySelector('#sixteenTeamBracketRightThree').addEventListener('click', (e) => {
+  document.querySelector('#sixteenTeamBracketEliteEightRightTwo').innerText = document.querySelector('#sixteenTeamBracketRightThree').innerText
+})
+// sixteen team bracket, sweet 16, right four, winner, click event: 
+// assigned to sixteen team bracket, elite 8, right two button 
+document.querySelector('#sixteenTeamBracketRightFour').addEventListener('click', (e) => {
+  document.querySelector('#sixteenTeamBracketEliteEightRightTwo').innerText = document.querySelector('#sixteenTeamBracketRightFour').innerText
+})
+// sixteen team bracket, sweet 16, right five, winner, click event: 
+// assigned to sixteen team bracket, elite 8, right three button 
+document.querySelector('#sixteenTeamBracketRightFive').addEventListener('click', (e) => {
+  document.querySelector('#sixteenTeamBracketEliteEightRightThree').innerText = document.querySelector('#sixteenTeamBracketRightFive').innerText
+})
+// sixteen team bracket, sweet 16, right six, winner, click event: 
+// assigned to sixteen team bracket, elite 8, right three button 
+document.querySelector('#sixteenTeamBracketRightSix').addEventListener('click', (e) => {
+  document.querySelector('#sixteenTeamBracketEliteEightRightThree').innerText = document.querySelector('#sixteenTeamBracketRightSix').innerText
+})
+// sixteen team bracket, sweet 16, right seven, winner, click event: 
+// assigned to sixteen team bracket, elite 8, right four button 
+document.querySelector('#sixteenTeamBracketRightSeven').addEventListener('click', (e) => {
+  document.querySelector('#sixteenTeamBracketEliteEightRightFour').innerText = document.querySelector('#sixteenTeamBracketRightSeven').innerText
+})
+// sixteen team bracket, sweet 16, right eight, winner, click event: 
+// assigned to sixteen team bracket, elite 8, right four button 
+document.querySelector('#sixteenTeamBracketRightEight').addEventListener('click', (e) => {
+  document.querySelector('#sixteenTeamBracketEliteEightRightFour').innerText = document.querySelector('#sixteenTeamBracketRightEight').innerText
+})
+// sixteen team bracket, elite 8, left one, winner click event:
+// assigned to sixteen team bracket, final 4, left one
+document.querySelector('#sixteenTeamBracketEliteEightLeftOne').addEventListener('click', (e) => {
+  document.querySelector('#sixteenTeamBracketFinalFourLeftOne').innerText = document.querySelector('#sixteenTeamBracketEliteEightLeftOne').innerText
+})
+// sixteen team bracket, elite 8, left two, winner click event:
+// assigned to sixteen team bracket, final 4, left one
+document.querySelector('#sixteenTeamBracketEliteEightLeftTwo').addEventListener('click', (e) => {
+  document.querySelector('#sixteenTeamBracketFinalFourLeftOne').innerText = document.querySelector('#sixteenTeamBracketEliteEightLeftTwo').innerText
+})
+// sixteen team bracket, elite 8, left three, winner click event:
+// assigned to sixteen team bracket, final 4, left two
+document.querySelector('#sixteenTeamBracketEliteEightLeftThree').addEventListener('click', (e) => {
+  document.querySelector('#sixteenTeamBracketFinalFourLeftTwo').innerText = document.querySelector('#sixteenTeamBracketEliteEightLeftThree').innerText
+})
+// sixteen team bracket, elite 8, left four, winner click event:
+// assigned to sixteen team bracket, final 4, left two
+document.querySelector('#sixteenTeamBracketEliteEightLeftFour').addEventListener('click', (e) => {
+  document.querySelector('#sixteenTeamBracketFinalFourLeftTwo').innerText = document.querySelector('#sixteenTeamBracketEliteEightLeftFour').innerText
+})
+// sixteen team bracket, elite 8, right one, winner click event: 
+// assigned to sixteen team bracket, final four, left one
+document.querySelector('#sixteenTeamBracketEliteEightRightOne').addEventListener('click', (e) => {
+  document.querySelector('#sixteenTeamBracketFinalFourRightOne').innerText = document.querySelector('#sixteenTeamBracketEliteEightRightOne').innerText
+})
+// sixteen team bracket, elite 8, right two, winner click event: 
+// assigned to sixteen team bracket, final four, left one
+document.querySelector('#sixteenTeamBracketEliteEightRightTwo').addEventListener('click', (e) => {
+  document.querySelector('#sixteenTeamBracketFinalFourRightOne').innerText = document.querySelector('#sixteenTeamBracketEliteEightRightTwo').innerText
+})
+// sixteen team bracket, elite 8, right three, winner click event: 
+// assigned to sixteen team bracket, final four, left two
+document.querySelector('#sixteenTeamBracketEliteEightRightThree').addEventListener('click', (e) => {
+  document.querySelector('#sixteenTeamBracketFinalFourRightTwo').innerText = document.querySelector('#sixteenTeamBracketEliteEightRightThree').innerText
+})
+// sixteen team bracket, elite 8, right four, winner click event: 
+// assigned to sixteen team bracket, final four, left two
+document.querySelector('#sixteenTeamBracketEliteEightRightFour').addEventListener('click', (e) => {
+  document.querySelector('#sixteenTeamBracketFinalFourRightTwo').innerText = document.querySelector('#sixteenTeamBracketEliteEightRightFour').innerText
+})
+// sixteen team bracket, final 4, left one, winner click event: 
+// assign to champion team 1 string, & moved to champion button 1 button
+document.querySelector('#sixteenTeamBracketFinalFourLeftOne').addEventListener('click', (e) => {
+  championTeamOne = document.querySelector('#sixteenTeamBracketFinalFourLeftOne').innerText
+  document.querySelector('#sixteenTeamBracketChampionshipOne').innerText = document.querySelector('#sixteenTeamBracketFinalFourLeftOne').innerText
+})
+// sixteen team bracket, final 4, left two, winner click event: 
+// assign to champion team 1 string, & moved to champion button 1 button
+document.querySelector('#sixteenTeamBracketFinalFourLeftTwo').addEventListener('click', (e) => {
+  championTeamOne = document.querySelector('#sixteenTeamBracketFinalFourLeftTwo').innerText
+  document.querySelector('#sixteenTeamBracketChampionshipOne').innerText = document.querySelector('#sixteenTeamBracketFinalFourLeftTwo').innerText
+})
+// sixteen team bracket, final 4, right one, winner click event: 
+// assign to champion team 2 string, & moved to champion button 2 button
+document.querySelector('#sixteenTeamBracketFinalFourRightOne').addEventListener('click', (e) => {
+  championTeamTwo = document.querySelector('#sixteenTeamBracketFinalFourRightOne').innerText
+  document.querySelector('#sixteenTeamBracketChampionshipTwo').innerText = document.querySelector('#sixteenTeamBracketFinalFourRightOne').innerText
+})
+// sixteen team bracket, final 4, right two, winner click event: 
+// assign to champion team 2 string, & moved to champion button 2 button
+document.querySelector('#sixteenTeamBracketFinalFourRightTwo').addEventListener('click', (e) => {
+  championTeamTwo = document.querySelector('#sixteenTeamBracketFinalFourRightTwo').innerText
+  document.querySelector('#sixteenTeamBracketChampionshipTwo').innerText = document.querySelector('#sixteenTeamBracketFinalFourRightTwo').innerText
+})
+// sixteen team bracket, championship team one: alerts winner 
+document.querySelector('#sixteenTeamBracketChampionshipOne').addEventListener('click', (e) => {
+  alert(`${championTeamOne} Wins!`)
+})
+// sixteen team bracket, championship team two: alerts winner 
+document.querySelector('#sixteenTeamBracketChampionshipTwo').addEventListener('click', (e) => {
+  alert(`${championTeamTwo} Wins!`)
+})
