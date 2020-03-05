@@ -24,7 +24,7 @@ function shuffle(array) {
 
 // HIDDEN/SHOWN FORMS & BRACKETS ON CLICK/SUBMIT ////////////////////////////////////////////////
 
-// HIDDEN/SHOWN BRACKET INPUT FORMS ON CLICK
+// HIDDEN/SHOWN BRACKET INPUT FORMS ON CLICK //////////////////////////////////////////////////////
 // 4 team form
 $(document).ready(function() {
     $("#fourFormButton").click(function() {
@@ -44,7 +44,7 @@ $(document).ready(function() {
     });
   });
 
-// HIDDEN/SHOWN BRACKET ON CREATE BRACKET CLICK
+// HIDDEN/SHOWN BRACKET ON CREATE BRACKET CLICK //////////////////////////////////////////////////////
 // 4 team bracket 
 $(document).ready(function() {
     $("#submitFourBracket").click(function() {
@@ -64,7 +64,7 @@ $(document).ready(function() {
     });
   });
 
-// HIDE INPUT FIELDS ON CREATE BRACKET CLICK 
+// HIDE INPUT FIELDS ON CREATE BRACKET CLICK  //////////////////////////////////////////////////////
 // 4 team bracket
 $(document).ready(function() {
   $("#submitFourBracket").click(function() {
@@ -104,7 +104,7 @@ $(document).ready(function() {
   })
 
 
-// FOUR TEAM BRACKET WINNER CLICK EVENTS 
+// FOUR TEAM BRACKET WINNER CLICK EVENTS //////////////////////////////////////////////////////
 //   four team bracket, left one, winner, click event: 
 //   assigned to champion team 1 string, & moved to champion team 1 button
 document.querySelector('#fourTeamBracketLeftOne').addEventListener('click', (e) => {
@@ -169,7 +169,47 @@ document.querySelector('#submitEightBracket').addEventListener('click', (e) => {
 })
 
 
-
+// EIGHT TEAM BRACKET WINNER CLICK EVENTS //////////////////////////////////////////////////////
+// eight team bracket, left one, winner, click event: 
+// assigned to eight team bracket, final four, left one button  
+document.querySelector('#eightTeamBracketLeftOne').addEventListener('click', (e) => {
+  document.querySelector('#eightTeamBracketFinalFourLeftOne').innerText = eightTeamBracket[0]
+})
+// eight team bracket, left two, winner, click event:
+// assign to eight team bracket, final four, left one button
+document.querySelector('#eightTeamBracketLeftTwo').addEventListener('click', (e) => {
+  document.querySelector('#eightTeamBracketFinalFourLeftOne').innerText = eightTeamBracket[1]
+})
+// eight team bracket, left three, winner, click event:
+// assign to eight team bracket, final four, left two button
+document.querySelector('#eightTeamBracketLeftThree').addEventListener('click', (e) => {
+  document.querySelector('#eightTeamBracketFinalFourLeftTwo').innerText = eightTeamBracket[2]
+})
+// eight team bracket, left four, winner click event:
+// assign to eight team bracket, final four, left two button
+document.querySelector('#eightTeamBracketLeftFour').addEventListener('click', (e) => {
+  document.querySelector('#eightTeamBracketFinalFourLeftTwo').innerText = eightTeamBracket[3]
+})
+// eight team bracket, right one, winner click event:
+// assign to eight team bracket, final four, right one
+document.querySelector('#eightTeamBracketRightOne').addEventListener('click', (e) => {
+  document.querySelector('#eightTeamBracketFinalFourRightOne').innerText = eightTeamBracket[4]
+})
+// eight team bracket, right two, winner click event:
+// assign to eight team bracket, final four, right one
+document.querySelector('#eightTeamBracketRightTwo').addEventListener('click', (e) => {
+  document.querySelector('#eightTeamBracketFinalFourRightOne').innerText = eightTeamBracket[5]
+})
+// eight team bracket, right three, winner click event:
+// assign to eight team bracket, final four, right two
+document.querySelector('#eightTeamBracketRightThree').addEventListener('click', (e) => {
+  document.querySelector('#eightTeamBracketFinalFourRightTwo').innerText = eightTeamBracket[6]
+})
+// eight team bracket, right four, winner click event:
+// assign to eight team bracket, final four, right two
+document.querySelector('#eightTeamBracketRightFour').addEventListener('click', (e) => {
+  document.querySelector('#eightTeamBracketFinalFourRightTwo').innerText = eightTeamBracket[7]
+})
 
 
 // SIXTEEN TEAM CREATE BRACKET CLICK EVENT: //////////////////////////////////////////////////////
@@ -213,7 +253,5 @@ document.querySelector('#submitSixteenBracket').addEventListener('click', (e) =>
   document.querySelector('#sixteenTeamBracketRightFive').innerText = sixteenTeamBracket[12]
   document.querySelector('#sixteenTeamBracketRightSix').innerText = sixteenTeamBracket[13]
   document.querySelector('#sixteenTeamBracketRightSeven').innerText = sixteenTeamBracket[14]
-  document.querySelector('#sixteenTeamBracketRightEight').innerText = sixteenTeamBracket[15]
-
- 
+  document.querySelector('#sixteenTeamBracketRightEight').innerText = sixteenTeamBracket[15] 
 })
