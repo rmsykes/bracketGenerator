@@ -1,10 +1,11 @@
 /* universal css */
 body {
     text-align: center;
+    background-color: aqua;
 }
-button:hover{
-    /* background-color: yellow; */
-}
+/* button:hover{ 
+     background-color: yellow; 
+  }  */
 
 /* HEADER */
 
@@ -117,9 +118,10 @@ button {
 }
 
 /* SIXTEEN TEAM BRACKET */
-#sixteenTeamBracketWrapper {
+/* #sixteenTeamBracketWrapper { 
+
+}*/
     
-}
 #sixteenTeamBracket {
     display: flex;
     justify-content: space-evenly;
